@@ -33,7 +33,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: registry
-    name: Registry
+    name: REGISTRY
     url: 'https://domain.cu.tn/'
     method: GET
     expectStatus: 200
