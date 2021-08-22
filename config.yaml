@@ -22,21 +22,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
-
-  - id: home
-    name: home
-    url: 'https://www.cu.tn'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-
-  - id: registry
-    name: registry
-    url: 'https://domain.cu.tn/'
-    method: GET
-    expectStatus: 200
-    linkable: false
-    
+  
   - id: preseed
     name: preseed
     url: 'https://ubuntu.pages.dev'
