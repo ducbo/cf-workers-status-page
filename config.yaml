@@ -15,9 +15,8 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: 139 # unique identifier
-    name: 139.99.46.78
-    description: 'EPP Server' # default=empty
+  - id: EPP # unique identifier
+    name: EPP Server
     url: 'http://139.99.46.78/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -26,14 +25,23 @@ monitors:
 
   - id: home
     name: www.cu.tn
-    description: 'Home.'
     url: 'https://www.cu.tn'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: registry
     name: REGISTRY
     url: 'https://domain.cu.tn/'
     method: GET
     expectStatus: 200
+    linkable: false
+    
+  - id: preseed
+    name: preseed
+    url: 'https://ubuntu.pages.dev'
+    method: GET
+    expectStatus: 200
+    linkable: false
+  
+    
