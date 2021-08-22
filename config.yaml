@@ -20,6 +20,7 @@ monitors:
     url: 'http://139.99.46.78/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
+    expectStatus: 403
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   
